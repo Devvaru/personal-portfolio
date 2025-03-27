@@ -14,7 +14,7 @@ export default function Projects() {
 
                     <div className="project-images">
                         {Array.isArray(project.imgs) && project.imgs.map((img, index) => (
-                            img && <img key={index} src={img} alt={`${project.title} screeenshot ${index + 1}`} style={{ width: 300 }} />
+                            img && <img key={index} src={img} alt={`${project.title} screenshot ${index + 1}`} style={{ width: 300 }} />
                         ))}
                     </div>
 
