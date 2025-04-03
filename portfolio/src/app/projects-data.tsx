@@ -23,7 +23,7 @@ const projects: Readonly<Record<string, Readonly<Record<string, string | Readonl
     project4: {
         title: "TwO-O-Player-Math-Game",
         url: "https://github.com/Devvaru/TwO-O-Player-Math-Game",
-        imgs: [""],
+        imgs: [],
         description: "A 2-Player CLI based math game written in Ruby, where players take turns to answer simple math addition problems. A new math question is generated for each turn by picking two numbers between 1 and 20. The player whose turn it is is prompted the question and must answer correctly or lose a life.",
         frameworks: ["Ruby"]
     },
