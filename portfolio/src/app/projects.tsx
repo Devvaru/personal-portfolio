@@ -2,11 +2,11 @@ import projects from "./projects-data";
 
 export default function Projects() {
     return (
-        <main className="projects-container flex flex-col items-center justify-center gap-10 py-8">
+        <main className="projects-container flex flex-col items-center justify-center gap-12 py-8">
             {Object.entries(projects).map(([key, project]) => (
 
                 // Project Card
-                <div key={key} className="project-card w-full rounded-xl flex flex-col bg-white lg:flex-row 2xl:max-w-[66%]">
+                <div key={key} className="project-card w-full rounded-xl flex flex-col bg-white 2xl:flex-row 2xl:max-w-[66%]">
 
                     {/* images for modal*/}
                     {/* <div className="project-images">
@@ -16,8 +16,8 @@ export default function Projects() {
                     </div> */}
 
                     {/* image */}
-                    <div className="project-image h-auto">
-                        {project.imgs.length >= 1 && <img src={project.imgs[0]} alt={project.title + " Project Screenshot"} className="rounded-t-xl lg:rounded-l-xl lg:rounded-r-none" />}
+                    <div className="project-image sm:self-center 2xl:self-auto">
+                        {project.imgs.length >= 1 && <img src={project.imgs[0]} alt={project.title + " Project Screenshot"} className="rounded-t-xl 2xl:max-w-lg 2xl:rounded-l-xl 2xl:rounded-r-none min-h-full" />}
                     </div>
 
                     <div className="flex flex-col p-8 gap-4">
