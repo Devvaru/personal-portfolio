@@ -35,9 +35,9 @@ export default function Projects() {
 
                         {/* stacks */}
                         {Array.isArray(project.frameworks) && (
-                            <ul className="frameworks-list flex gap-2 text-cyan-800 font-bold"> {"|"}
+                            <ul className="frameworks-list flex flex-wrap gap-2 text-cyan-800 font-bold"> {"|"}
                                 {project.frameworks.map((framework, index) => (
-                                    <li key={index}>{framework + " | "}</li>
+                                    <li key={index}>{`${framework} | `}</li>
                                 ))}
                             </ul>
                         )}
