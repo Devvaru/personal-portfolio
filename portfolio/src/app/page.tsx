@@ -15,7 +15,7 @@ export default function Home() {
             <CarouselContainer />
           </section>
         </section>
-        <section id="projects" className="p-8"><Projects /></section>
+        <section id="projects" className="py-8 px-12 bg-gray-200"><Projects /></section>
         <section id="design"></section>
       </main>
       <footer>
