@@ -4,19 +4,19 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Navigation() {
     return (
-        <main className={"nav-container h-fit bg-white p-4 flex justify-between"}>
-            <div className={"nav flex gap-2 text-xl"}>
-                <a href={"#projects"} className={"nav-link"}>Projects</a>
-                <a href={"#stacks"} className={"nav-link"}>Stacks</a>
-                <a href={""} className={"nav-link"}>Design</a>
-                <a href={"#contact"} className={"nav-link"}>Contact</a>
+        <main className={"nav-container h-fit bg-white px-20 py-4 flex justify-between"}>
+            <div className={"nav flex gap-3 text-xl"}>
+                <a href={"#projects"} className={"nav-link hover:underline decoration-2 duration-300 text-cyan-950 font-semibold"}>Projects</a>
+                <a href={"#stacks"} className={"nav-link hover:underline decoration-2 duration-300 text-cyan-950 font-semibold"}>Stacks</a>
+                <a href={""} className={"nav-link hover:underline decoration-2 duration-300 text-cyan-950 font-semibold"}>Design</a>
+                <a href={"#contact"} className={"nav-link hover:underline decoration-2 duration-300 text-cyan-950 font-semibold"}>Contact</a>
             </div>
-            <div className="flex gap-2">
-                <a href="https://www.linkedin.com/in/devon-g-b627872a1/">
-                    <FontAwesomeIcon icon={faLinkedin} size="2x" className={"fa-brands"} />
+            <div className="flex gap-3">
+                <a href="https://www.linkedin.com/in/devon-g-b627872a1/" target='_blank'>
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" className={"fa-brands hover:scale-110 duration-300"} style={{color: "#006064",}} />
                 </a>
-                <a href="https://github.com/Devvaru">
-                    <FontAwesomeIcon icon={faGithub} size="2x" className={"fa-brands"} />
+                <a href="https://github.com/Devvaru" target='_blank'>
+                    <FontAwesomeIcon icon={faGithub} size="2x" className={"fa-brands hover:scale-110 duration-300"}  style={{color: "#006064",}} />
                 </a>
             </div>
         </main>
