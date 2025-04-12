@@ -15,9 +15,14 @@ export default function Projects() {
                         ))}
                     </div> */}
 
-                    {/* image */}
-                    <div className="project-image sm:self-center 2xl:self-auto">
-                        {project.imgs.length >= 1 && <img src={project.imgs[0]} alt={project.title + " Project Screenshot"} className="rounded-t-xl 2xl:max-w-lg 2xl:rounded-l-xl 2xl:rounded-r-none min-h-full" />}
+                    <div className="project-image 2xl:h-auto 2xl:max-w-lg flex items-center justify-center p-4 2xl:p-0">
+                        {project.imgs.length >= 1 && (
+                            <img
+                                src={project.imgs[0]}
+                                alt={project.title + " Project Screenshot"}
+                                className="rounded-t-xl 2xl:rounded-l-xl 2xl:rounded-r-none object-cover h-full w-full"
+                            />
+                        )}
                     </div>
 
                     <div className="flex flex-col p-8 gap-4">
