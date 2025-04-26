@@ -2,7 +2,7 @@ import projects from "./projects-data";
 
 export default function Projects() {
     return (
-        <main className="projects-container flex flex-col items-center justify-center gap-12 py-8">
+        <main className="projects-container flex flex-col items-center justify-center gap-12">
             <h2 className=" text-2xl lg:text-4xl">Projects</h2>
             {Object.entries(projects).map(([key, project]) => (
 
@@ -50,7 +50,7 @@ export default function Projects() {
 
                         {/* button */}
                         {typeof project.url === "string" && (
-                            <a href={project.url} target="_blank" rel="noopener noreferrer" className="py-2 px-6 bg-cyan-600 hover:bg-cyan-800 text-white rounded-full w-40 flex justify-center font-semibold">
+                            <a href={project.url} target="_blank" rel="noopener noreferrer" className="py-2 px-6 bg-cyan-600 hover:bg-cyan-800 text-white rounded-full w-40 flex justify-center font-semibold duration-300">
                                 View Project
                             </a>
                         )}
