@@ -1,94 +1,95 @@
 import { CardDetail } from "./types";
+const basePath = "/personal-portfolio"; // for production
 
 export const cardDetails: Record<string, CardDetail> = {
     0: {
-        imgUrl: "/logos/javascript.svg",
+        imgUrl: `${basePath}/logos/javascript.svg`,
         imgTitle: "JavaScript",
         imgAlt: "JavaScript Logo"
     },
 
     1: {
-        imgUrl: "/logos/typescript.svg",
+        imgUrl: `${basePath}/logos/typescript.svg`,
         imgTitle: "TypeScript",
         imgAlt: "TypeScript Logo"
     },
 
     2: {
-        imgUrl: "/logos/reactjs.svg",
+        imgUrl: `${basePath}/logos/reactjs.svg`,
         imgTitle: "React.js",
         imgAlt: "React Logo"
     },
 
     3: {
-        imgUrl: "/logos/react-bootstrap.svg",
+        imgUrl: `${basePath}/logos/react-bootstrap.svg`,
         imgTitle: "React-Bootstrap",
         imgAlt: "React Bootstrap Logo"
     },
 
     4: {
-        imgUrl: "/logos/nextjs.svg",
+        imgUrl: `${basePath}/logos/nextjs.svg`,
         imgTitle: "Next.js",
         imgAlt: "Next JS Logo"
     },
 
     5: {
-        imgUrl: "/logos/postgresql.svg",
+        imgUrl: `${basePath}/logos/postgresql.svg`,
         imgTitle: "PostgreSQL",
         imgAlt: "PostgreSQL Logo"
     },
 
     6: {
-        imgUrl: "/logos/html5.svg",
+        imgUrl: `${basePath}/logos/html5.svg`,
         imgTitle: "HTML5",
         imgAlt: "HTML5 Logo"
     },
     7: {
-        imgUrl: "/logos/css3.svg",
+        imgUrl: `${basePath}/logos/css3.svg`,
         imgTitle: "CSS3",
         imgAlt: "CSS3 Logo"
     },
     8: {
-        imgUrl: "/logos/nodejs.svg",
+        imgUrl: `${basePath}/logos/nodejs.svg`,
         imgTitle: "Node.js",
         imgAlt: "Node JS Logo"
     },
     9: {
-        imgUrl: "/logos/git.svg",
+        imgUrl: `${basePath}/logos/git.svg`,
         imgTitle: "Git",
         imgAlt: "Git Logo"
     },
     10: {
-        imgUrl: "/logos/sass.svg",
+        imgUrl: `${basePath}/logos/sass.svg`,
         imgTitle: "Sass",
         imgAlt: "Sass Logo"
     },
     11: {
-        imgUrl: "/logos/cypress.svg",
+        imgUrl: `${basePath}/logos/cypress.svg`,
         imgTitle: "Cypress",
         imgAlt: "Cypress Logo"
     },
     12: {
-        imgUrl: "/logos/mocha.svg",
+        imgUrl: `${basePath}/logos/mocha.svg`,
         imgTitle: "Mocha",
         imgAlt: "Mocha Logo"
     },
     13: {
-        imgUrl: "/logos/jest.svg",
+        imgUrl: `${basePath}/logos/jest.svg`,
         imgTitle: "Jest",
         imgAlt: "Jest Logo"
     },
     14: {
-        imgUrl: "/logos/wordpress.svg",
+        imgUrl: `${basePath}/logos/wordpress.svg`,
         imgTitle: "Wordpress",
         imgAlt: "Wordpress Logo"
     },
     15: {
-        imgUrl: "/logos/cloudflare.svg",
+        imgUrl: `${basePath}/logos/cloudflare.svg`,
         imgTitle: "Cloudflare",
         imgAlt: "Cloudflare Logo"
     },
     16: {
-        imgUrl: "/logos/jquery.svg",
+        imgUrl: `${basePath}/logos/jquery.svg`,
         imgTitle: "jQuery",
         imgAlt: "JQuery Logo"
     },
