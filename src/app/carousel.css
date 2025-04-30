@@ -1,0 +1,18 @@
+.carousel-track {
+    animation: slide 80s linear infinite;
+    will-change: transform;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
