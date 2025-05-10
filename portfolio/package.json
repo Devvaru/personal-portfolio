@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "start": "next start",
     "build": "next build",
-    "prepare-out": "echo > out/.nojekyll && echo 'www.devvaru.com' > out/CNAME",
+    "prepare-out": "echo > out/.nojekyll && echo 'www.devaru.ca' > out/CNAME",
     "deploy": "npm run prepare-out && gh-pages -d out --dotfiles",
     "export-deploy": "next build && npm run deploy",
     "lint": "next lint"
