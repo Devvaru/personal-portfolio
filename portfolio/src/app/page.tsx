@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Navigation />
       <main className="">
-        <section id="banner" className="bg-[url(/images/portfolio-bg-full.png)] bg-cover flex flex-col justify-center gap-10 xl:gap-20 bg-gradient-to-bl text-blue-50 py-15 xl:py-25 px-5 md:px-12 xl:px-30 z-0 relative">
+        <section id="banner" className="bg-[url(/images/portfolio-bg-full.png)] bg-cover flex flex-col justify-center gap-10 xl:gap-20 bg-gradient-to-bl text-blue-50 py-15 xl:py-25 px-5 md:px-12 xl:px-30 bg-top">
           <section id="intro" className="mix-blend-normal">
             <Intro />
           </section>
