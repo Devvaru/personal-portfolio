@@ -16,7 +16,7 @@ export default function Home() {
             <CarouselContainer />
           </section>
         </section>
-        <section id="projects" className="bg-gray-200 py-15 xl:py-25 px-5 md:px-12 xl:px-30"><Projects /></section>
+        <section id="projects" className="py-15 xl:py-25 px-5 md:px-12 xl:px-30"><Projects /></section>
         <section id="design"></section>
       </main>
       <footer>
