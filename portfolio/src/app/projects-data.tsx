@@ -31,7 +31,7 @@ const projects: Readonly<Record<string, Readonly<Record<string, string | Readonl
         title: "Etch-A-Sketch",
         url: "https://github.com/Devvaru/Etch-a-Sketch",
         imgs: [`/images/etch-a-sketch-1.jpg`, `/images/etch-a-sketch-2.jpg`, `/images/etch-a-sketch-3.jpg`],
-        description: "Etch-a-Sketch is an online drawing canvas where you can use various tools to create beautiful pixel art, including a colour picker, a grayscale pencil, and a color randomizer. You also have the option to change canvas size to your liking.",
+        description: "Etch-a-Sketch is an online drawing canvas where you can use various tools to create beautiful pixel art, including a colour picker, a grayscale pencil, and a color randomizer. You also have the option to change canvas size to your liking. NOTE: The app functions well, however the code needs refactoring. V2 coming soon!",
         frameworks: ["JavaScript", "HTML5", "CSS3"]
     },
 };
