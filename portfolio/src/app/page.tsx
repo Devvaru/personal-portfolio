@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Navigation />
       <main className="">
-        <section id="banner" className="bg-[url(/images/portfolio-bg-full.png)] bg-cover flex flex-col justify-center gap-10 xl:gap-20 bg-gradient-to-bl from-cyan-900 to-slate-800 text-blue-50 py-15 xl:py-25 px-5 md:px-12 xl:px-30">
+        <section id="banner" className="bg-[url(/images/portfolio-bg-full.png)] bg-cover bg-bottom flex flex-col justify-center gap-10 xl:gap-20 text-blue-50 py-15 xl:py-25 px-5 md:px-12 xl:px-30 h-[1000px]">
           <section id="intro">
             <Intro />
           </section>

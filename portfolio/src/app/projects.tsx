@@ -3,7 +3,7 @@ import projects from "./projects-data";
 export default function Projects() {
     return (
         <main className="projects-container flex flex-col items-center justify-center gap-12">
-            <h2 className=" text-2xl lg:text-4xl">Projects</h2>
+            <h2 className=" text-2xl lg:text-4xl text-cyan-950">Projects</h2>
             {Object.entries(projects).map(([key, project]) => (
 
                 // Project Card
