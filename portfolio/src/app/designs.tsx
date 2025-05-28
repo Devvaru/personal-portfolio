@@ -3,7 +3,6 @@ import designs from "./designs-data";
 export default function Designs() {
     return (
         <main className="flex flex-col items-center justify-center gap-12">
-            <h2 className=" text-2xl lg:text-4xl">Designs</h2>
             {Object.entries(designs).map(([key, design]) => (
 
                 // Design Card
