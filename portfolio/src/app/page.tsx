@@ -1,6 +1,7 @@
 import Navigation from "./navigation";
 import Intro from "./intro";
 import Projects from "./projects";
+import Designs from "./designs";
 import CarouselContainer from "./CarouselContainer";
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
           </section>
         </section>
         <section id="projects" className="py-15 xl:py-25 px-5 md:px-12 xl:px-30"><Projects /></section>
-        <section id="design"></section>
+        <section id="designs" className="py-15 xl:py-25 px-5 md:px-12 xl:px-30"> <Designs /> </section>
       </main>
       <footer>
       </footer>
