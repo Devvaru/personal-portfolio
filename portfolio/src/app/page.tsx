@@ -1,10 +1,15 @@
+"use client"
+
 import Navigation from "./navigation";
 import Intro from "./intro";
 import Projects from "./projects";
 import Designs from "./designs";
 import CarouselContainer from "./CarouselContainer";
+import { useState } from 'react';
 
 export default function Home() {
+  const [activeDisplay, setActiveDisplay] = useState('projects');
+
   return (
     <div>
       <Navigation />
@@ -17,8 +22,16 @@ export default function Home() {
             <CarouselContainer />
           </section>
         </section>
-        <section id="projects" className="py-15 xl:py-25 px-5 md:px-12 xl:px-30"><Projects /></section>
-        <section id="designs" className="py-15 xl:py-25 px-5 md:px-12 xl:px-30"> <Designs /> </section>
+
+        <section id="projects" className="py-15 xl:py-25 px-5 md:px-12 xl:px-30">
+          <div className="flex justify-center items-center gap-5">
+            <button onClick={() => setActiveDisplay('projects')}>Projects</button>
+            <button onClick={() => setActiveDisplay('designs')}>Designs</button>
+          </div>
+          
+          {activeDisplay == 'projects' && <Projects />}
+          {activeDisplay == 'designs' && <Designs />}
+        </section>
       </main>
       <footer>
       </footer>
