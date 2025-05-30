@@ -3,11 +3,10 @@ import projects from "./projects-data";
 export default function Projects() {
     return (
         <main className="projects-container flex flex-col items-center justify-center gap-12">
-            <h2 className=" text-2xl lg:text-4xl text-cyan-950">Projects</h2>
             {Object.entries(projects).map(([key, project]) => (
 
                 // Project Card
-                <div key={key} className="project-card w-full rounded-xl flex flex-col bg-white 2xl:flex-row 2xl:max-w-[66%]">
+                <div key={key} className="project-card w-full rounded-xl flex flex-col bg-white 2xl:flex-row 2xl:max-w-[75%]">
 
                     {/* images for modal*/}
                     {/* <div className="project-images">
