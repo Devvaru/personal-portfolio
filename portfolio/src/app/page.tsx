@@ -8,11 +8,12 @@ import CarouselContainer from "./CarouselContainer";
 import { useState } from 'react';
 
 export default function Home() {
-  const [activeDisplay, setActiveDisplay] = useState('projects');
+  type DisplayOption = 'projects' | 'designs';
+  const [activeDisplay, setActiveDisplay] = useState<DisplayOption>('projects');
 
   return (
     <div>
-      <Navigation />
+      <Navigation activeDisplay={activeDisplay} setActiveDisplay={setActiveDisplay} />
       <main className="">
         <section id="banner" className="bg-[url(/images/portfolio-bg-full.png)] bg-cover flex flex-col justify-center gap-10 xl:gap-20 text-blue-50 py-15 xl:py-25 px-5 md:px-12 xl:px-30">
           <section id="intro">
