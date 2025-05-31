@@ -8,7 +8,7 @@ import { ContentState } from "./types";
 import Link from 'next/link';
 
 export default function Navigation(props: ContentState) {
-    const { activeDisplay, setActiveDisplay } = props;
+    const { setActiveDisplay } = props;
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
