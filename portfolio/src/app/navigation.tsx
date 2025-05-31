@@ -4,8 +4,11 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { ContentState } from "./types";
+import Link from 'next/link';
 
-export default function Navigation() {
+export default function Navigation(props: ContentState) {
+    const { setActiveDisplay } = props;
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
@@ -21,9 +24,12 @@ export default function Navigation() {
             </button>
 
             <div className={`absolute top-16 left-0 w-full bg-white flex flex-col gap-4 px-10 py-10 md:static md:flex-row md:gap-6 md:p-0 md:w-auto md:items-center transition-all duration-300 z-10 ${isOpen ? "block" : "hidden"} md:flex`}>
-                <a href={"#projects"} className={"nav-link hover:underline decoration-2 text-cyan-950 font-semibold text-lg"}>Projects</a>
-                <a href={"#skills"} className={"nav-link hover:underline decoration-2 text-cyan-950 font-semibold text-lg"}>Skills</a>
-                {/* <a href={""} className={"nav-link hover:underline decoration-2 text-cyan-950 font-semibold text-lg"}>Design</a> */}
+                <Link href={"#projects"} onClick={() => setActiveDisplay('projects')} className={"nav-link hover:underline decoration-2 text-cyan-950 font-semibold text-lg"}>Projects</Link>
+
+                <Link href={"#projects"} onClick={() => setActiveDisplay('designs')} className={"nav-link hover:underline decoration-2 text-cyan-950 font-semibold text-lg"}>Designs</Link>
+
+                <Link href={"#skills"} className={"nav-link hover:underline decoration-2 text-cyan-950 font-semibold text-lg"}>Skills</Link>
+
                 <a href={"mailto:devongaal@gmail.com"} className={"nav-link hover:underline decoration-2 text-cyan-950 font-semibold text-lg"}>Contact</a>
             </div>
 
