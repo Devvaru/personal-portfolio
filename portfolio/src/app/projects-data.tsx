@@ -1,4 +1,6 @@
-const projects: Readonly<Record<string, Readonly<Record<string, string | ReadonlyArray<string>>>>> = {
+import { Project } from './types';
+
+const projects: Record<string, Project> = {
     project1: {
         title: "PawTrackr",
         url: "https://github.com/Devvaru/PawTrackr",
