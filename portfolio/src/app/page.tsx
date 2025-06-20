@@ -1,9 +1,9 @@
 "use client"
 
-import Navigation from "./navigation";
-import Intro from "./intro";
-import Projects from "./projects";
-import Designs from "./designs";
+import Navigation from "./Navigation";
+import Intro from "./Intro";
+import Projects from "./Projects";
+import Designs from "./Designs";
 import CarouselContainer from "./CarouselContainer";
 import { useState } from 'react';
 import DisplayToggle from "./DisplayToggle";

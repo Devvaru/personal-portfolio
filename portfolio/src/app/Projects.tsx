@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import projects from "./projects-data";
-import ProjectsModal from "./projects-modal";
+import ProjectsModal from "./ProjectsModal";
 import { ModalState } from "./types";
 
 export default function Projects() {

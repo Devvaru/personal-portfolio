@@ -1,10 +1,7 @@
 import React from "react";
-import { DisplayOption } from "./types";
+import { DisplayToggleProps } from "./types";
 
-interface DisplayToggleProps {
-    activeDisplay: DisplayOption;
-    setActiveDisplay: React.Dispatch<React.SetStateAction<DisplayOption>>;
-}
+
 
 export default function DisplayToggle(props: DisplayToggleProps) {
     const { activeDisplay, setActiveDisplay } = props;
