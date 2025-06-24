@@ -1,11 +1,6 @@
-import { useState } from 'react';
 import projects from "./projects-data";
-import ProjectsModal from "./ProjectsModal";
-import { ModalState } from "./types";
 
-export default function Projects() {
-    const [modalOpen, setModalOpen] = useState(false);
-    const modalState: ModalState = { modalOpen, setModalOpen };
+export default function Projects({ onProjectClick }) {
 
     return (
         <main className="projects-container flex flex-col items-center justify-center gap-12">
@@ -14,17 +9,14 @@ export default function Projects() {
                 // Project Card
                 <div key={key} className="project-card w-full rounded-xl flex flex-col bg-white 2xl:flex-row 2xl:max-w-[75%]">
 
-                    {/* Modal for extra images and zooming */}
-                    <ProjectsModal {...modalState} projectImgs={project.imgs} />
-
                     {/* Main image */}
                     <div className="project-image 2xl:h-auto 2xl:max-w-lg flex items-center justify-center p-4 2xl:p-0">
-                        {project.imgs.length >= 1 && (
+                        {project.imgs.length > 0 && (
                             <img
                                 src={project.imgs[0]}
                                 alt={project.title + " Project Screenshot"}
                                 className="rounded-t-xl 2xl:rounded-l-xl 2xl:rounded-r-none object-cover h-full w-full"
-                                onClick={() => setModalOpen(true)}
+                                onClick={() => onProjectClick(project.imgs as string[])}
                             />
                         )}
                     </div>

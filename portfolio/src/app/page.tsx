@@ -1,16 +1,19 @@
 "use client"
 
+import { useState } from 'react';
+import { DisplayOption, ModalState } from "./types";
 import Navigation from "./Navigation";
 import Intro from "./Intro";
 import Projects from "./Projects";
 import Designs from "./Designs";
 import CarouselContainer from "./CarouselContainer";
-import { useState } from 'react';
 import DisplayToggle from "./DisplayToggle";
-import { DisplayOption } from "./types";
+import ProjectsModal from './ProjectsModal';
 
 export default function Home() {
   const [activeDisplay, setActiveDisplay] = useState<DisplayOption>('projects');
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImages, setSelectedImages] = useState<string[]>([]);
 
   return (
     <div>
@@ -26,8 +29,14 @@ export default function Home() {
         </section>
         <section id="projects" className="flex flex-col py-15 xl:py-25 px-5 md:px-12 xl:px-30 gap-15 w-full items-center">
           <DisplayToggle activeDisplay={activeDisplay} setActiveDisplay={setActiveDisplay} />
-          {activeDisplay === 'projects' && <Projects />}
+          {activeDisplay === 'projects' && (
+            <Projects onProjectClick={(imgs) => {
+              setSelectedImages(imgs);
+              setModalOpen(true);
+            }} />
+          )}
           {activeDisplay === 'designs' && <Designs />}
+          <ProjectsModal modalOpen={modalOpen} setModalOpen={setModalOpen} projectImgs={selectedImages} />
         </section>
       </main>
       <footer>
