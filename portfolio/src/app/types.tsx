@@ -32,3 +32,7 @@ export type ModalState = {
 export interface ProjectsModalProps extends ModalState {
     projectImgs: string[];
 }
+
+export interface ProjectsProps {
+  onProjectClick: (imgs: string[]) => void;
+}

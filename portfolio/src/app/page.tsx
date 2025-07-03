@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react';
-import { DisplayOption, ModalState } from "./types";
+import { DisplayOption } from "./types";
 import Navigation from "./Navigation";
 import Intro from "./Intro";
 import Projects from "./Projects";
@@ -30,7 +30,7 @@ export default function Home() {
         <section id="projects" className="flex flex-col py-15 xl:py-25 px-5 md:px-12 xl:px-30 gap-15 w-full items-center">
           <DisplayToggle activeDisplay={activeDisplay} setActiveDisplay={setActiveDisplay} />
           {activeDisplay === 'projects' && (
-            <Projects onProjectClick={(imgs) => {
+            <Projects onProjectClick={(imgs: string[]) => {
               setSelectedImages(imgs);
               setModalOpen(true);
             }} />

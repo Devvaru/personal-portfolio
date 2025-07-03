@@ -1,7 +1,7 @@
 import projects from "./projects-data";
+import { ProjectsProps } from "./types";
 
-export default function Projects({ onProjectClick }) {
-
+export default function Projects({ onProjectClick }: ProjectsProps) {
     return (
         <main className="projects-container flex flex-col items-center justify-center gap-12">
             {Object.entries(projects).map(([key, project]) => (
