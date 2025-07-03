@@ -1,6 +1,7 @@
 import projects from "./projects-data";
+import { ProjectsProps } from "./types";
 
-export default function Projects() {
+export default function Projects({ onProjectClick }: ProjectsProps) {
     return (
         <main className="projects-container flex flex-col items-center justify-center gap-12">
             {Object.entries(projects).map(([key, project]) => (
@@ -8,19 +9,14 @@ export default function Projects() {
                 // Project Card
                 <div key={key} className="project-card w-full rounded-xl flex flex-col bg-white 2xl:flex-row 2xl:max-w-[75%]">
 
-                    {/* images for modal*/}
-                    {/* <div className="project-images">
-                        {Array.isArray(project.imgs) && project.imgs.map((img, index) => (
-                            img && <img key={index} src={img} alt={`${project.title} screenshot ${index + 1}`} style={{ width: 300 }} />
-                        ))}
-                    </div> */}
-
+                    {/* Main image */}
                     <div className="project-image 2xl:h-auto 2xl:max-w-lg flex items-center justify-center p-4 2xl:p-0">
-                        {project.imgs.length >= 1 && (
+                        {project.imgs.length > 0 && (
                             <img
                                 src={project.imgs[0]}
                                 alt={project.title + " Project Screenshot"}
-                                className="rounded-t-xl 2xl:rounded-l-xl 2xl:rounded-r-none object-cover h-full w-full"
+                                className="rounded-t-xl 2xl:rounded-l-xl 2xl:rounded-r-none object-cover h-full w-full hover:cursor-pointer"
+                                onClick={() => onProjectClick(project.imgs as string[])}
                             />
                         )}
                     </div>
