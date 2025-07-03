@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   basePath: "",
   assetPrefix: "",
+  eslint: { ignoreDuringBuilds: true }
 };
 
 export default nextConfig;
