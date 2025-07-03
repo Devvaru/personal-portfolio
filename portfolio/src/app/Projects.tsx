@@ -15,7 +15,7 @@ export default function Projects({ onProjectClick }) {
                             <img
                                 src={project.imgs[0]}
                                 alt={project.title + " Project Screenshot"}
-                                className="rounded-t-xl 2xl:rounded-l-xl 2xl:rounded-r-none object-cover h-full w-full"
+                                className="rounded-t-xl 2xl:rounded-l-xl 2xl:rounded-r-none object-cover h-full w-full hover:cursor-pointer"
                                 onClick={() => onProjectClick(project.imgs as string[])}
                             />
                         )}
